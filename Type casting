@@ -1,0 +1,12 @@
+class Main{
+    public static void main(String[] args)
+    {
+        byte b; //can take upto 127
+        int i=129;
+        double d=423.150;
+        b=(byte) i;  //use number line
+        System.out.println("i="+i+" b="+b);
+        b=(byte) d;  //remove points and treats as byte
+        System.out.println("Conversion of double to byte:d="+d+" b="+b);
+;}
+}
