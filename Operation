@@ -1,0 +1,59 @@
+import java.util.Scanner;
+class Check{
+    public static void positiveNegative(){
+            int a=-5;
+            var result=a>=0?"Positive":"Negative";
+
+            System.out.println(result);
+
+
+    }
+    public static void operation()
+    {
+    int x,y;
+        Scanner input=new Scanner(System.in);
+        String operator=input.nextLine();
+        System.out.println("Enter a input X:");
+        x=input.nextInt();
+        System.out.println("Enter a input Y:");
+        y=input.nextInt();
+        switch(operator)
+        {
+            case "addition" :
+           
+            System.out.println(x+y);
+            break;
+            case "subtraction" :
+            System.out.println(x-y);
+            break;
+            case "multiplication" :
+            System.out.println(x*y);
+            break;
+            case "division" :
+            System.out.println(y/x);
+            break;
+            case "modulus" :
+            System.out.println(x%y);
+            break;
+            default:
+            System.out.println("Error");
+
+        }
+        input.close();
+    }
+
+
+        public static void main(String[] args)
+        {
+           
+          
+         
+           
+            operation();
+
+            
+       
+           
+        }
+
+};
