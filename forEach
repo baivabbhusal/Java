@@ -1,0 +1,27 @@
+class Main {
+        public static void main(String[] args) {
+          int a[]=new int[100];
+          for (int i = 0; i < 100; i++) {
+                a[i] = i + 1;
+            }
+                int odd=0;
+                int even=0;
+                for(int result:a)
+                {
+                        if(result % 2 !=0)
+                        {
+                             
+                                odd+=result;
+                        }
+                        else{
+                                even+=result;
+
+
+                        }
+                       
+                }
+                System.out.println(odd);
+                System.out.println(even);
+          
+        }
+      };
