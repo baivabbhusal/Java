@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Main {
+        public static void main(String[] args) {
+                Scanner input=new Scanner(System.in);
+                System.out.println("Enter a principle,time and rate");
+                int p=input.nextInt();
+                int t=input.nextInt();
+                int r=input.nextInt();
+
+
+
+
+
+                
+        Main si=new Main();
+
+       int result= si.interest(p,t,r);
+       System.out.println(result);
+       input.close();
+        }
+
+        public int interest(int p,int t,int r)
+        {
+                int simpleInterest=(p*t*r)/100;
+                return simpleInterest;
+
+        }
+      };
