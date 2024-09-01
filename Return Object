@@ -1,0 +1,12 @@
+public class Call {
+    public static void main(String[] args){
+    
+        String resultReturned=display("Chandu");
+        System.out.println(resultReturned);
+    }
+    public static String display(String a){
+        String result="I am "+a;
+     return result;
+
+    }
+};
