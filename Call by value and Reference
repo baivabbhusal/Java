@@ -1,0 +1,27 @@
+//call by reference
+public class Call {
+    public static void main(String[] args){
+    
+       display("Chandu");
+        
+    }
+    public static void display(String a){
+        
+        System.out.println("I am "+a);
+
+    }
+};
+
+//call  by value
+public class Call {
+    public static void main(String[] args){
+    
+       display(32);
+        
+    }
+    public static void display(int a){
+        
+        System.out.println("I am "+a+" years old.");
+
+    }
+};
