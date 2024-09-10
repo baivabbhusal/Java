@@ -1,0 +1,13 @@
+public class ExceptionHandling{
+  public static void main(String[] args) throws Exception{
+
+    add();
+  }
+  private static void sum() throws Exception{
+    sum();
+  }
+private static void add() throws Exception{
+System.out.println(10/0);
+}
+
+};
