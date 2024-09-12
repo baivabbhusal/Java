@@ -1,0 +1,31 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.ResultSet;
+
+public class Database{
+    public static void main(String args[]){
+        String url="jdbc:mysql://localhost:3306/baivab_db";//using database file
+        String username="root";
+        String password="root";
+        try{
+            Connection conn=DriverManager.getConnection(url,username,password);
+            Statement s=conn.createStatement();
+            String sql="insert into customers(customer_Name) values('Gandi')";//inserting values
+           // s.executeUpdate(sql);   while inseerting new value or update
+            ResultSet r=s.executeQuery("Select * from customers");
+           while(r.next()){
+            System.out.println(r.getString("customer_Name"));
+           }
+        }
+        catch(SQLException e){
+             e.printStackTrace();
+        }
+
+
+    }
+   
+
+
+}
