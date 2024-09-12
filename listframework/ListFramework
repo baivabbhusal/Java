@@ -1,0 +1,15 @@
+public class ListFramework{
+public static void main(String[] args){
+List<Person> multipleBaivab=new ArrayList<Person>;
+multipleBaivab.add(new Person("Baivab",21));
+multipleBaivab.add(new Person("Gana",23));
+multipleBaivab.add(new Person("Mana",32));
+
+for(Person result : multipleBaivab){
+    System.out.println(result.getName());
+    System.out.println(result.getAge());
+
+
+}
+    }
+}
